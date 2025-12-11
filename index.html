@@ -1,48 +1,187 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Get feedback — Landing mock</title>
-  <style>
-    :root{--bg:#05221b;--panel:#072d22;--muted:#93a694;--accent:#dff2e6}
-    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
-    body{background:var(--bg);color:var(--accent);display:flex;align-items:center;justify-content:center;padding:28px}
-    .wrap{width:100%;max-width:1120px;background:transparent;border-radius:6px;padding:28px;box-sizing:border-box}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
-    .left h1{font-size:44px;line-height:1.02;margin:0;color:#e9f6ee;font-weight:600}
-    .left p{margin-top:8px;color:var(--muted);font-size:15px;max-width:520px}
-    .right{display:flex;flex-direction:column;gap:18px}
-    .feature h3{margin:0;font-size:15px;color:#bfe9c8}
-    .feature p{margin:6px 0 0 0;color:var(--muted);font-size:14px;line-height:1.45}
-    .screenshot{width:100%;height:140px;border-radius:6px;overflow:hidden;box-shadow:0 4px 30px rgba(0,0,0,0.6)}
-    .screenshot img{width:100%;height:100%;object-fit:cover;display:block}
-    @media (max-width:900px){.grid{grid-template-columns:1fr;gap:18px}.left h1{font-size:32px}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Reviews</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #fff;
+        color: #000;
+    }
+
+    .container {
+        width: 88%;
+        margin: auto;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        color: #777;
+        margin-bottom: 8px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 45px;
+        font-weight: 600;
+    }
+
+    /* Cards (top section) */
+    .cards {
+        display: flex;
+        justify-content: center;
+        gap: 35px; /* rasmda bo‘lgani kabi */
+        margin-bottom: 45px;
+    }
+
+    .card {
+        background: #08251E;
+        color: white;
+        padding: 55px 30px;
+        width: 30%;
+        border-radius: 6px;
+        text-align: left;
+        min-height: 165px;
+    }
+
+    .card-text {
+        font-size: 18px;
+        margin-bottom: 25px;
+        line-height: 1.4;
+    }
+
+    .learn {
+        color: #8EEEC7;
+        font-size: 14px;
+        text-decoration: underline;
+    }
+
+    /* Bottom Section */
+    .bottom-section {
+        display: flex;
+        justify-content: center;
+        gap: 35px; /* rasmga mos */
+    }
+
+    .bottom-card {
+        background: #08251E;
+        color: white;
+        padding: 40px;
+        width: 30%;
+        border-radius: 6px;
+        text-align: left;
+    }
+
+    .green {
+        color: #B1FF80;
+    }
+
+    .why {
+        color: #8EEEC7;
+        font-size: 14px;
+        text-decoration: underline;
+    }
+
+    /* Rating Card */
+    .rating-card {
+        background: #08251E;
+        color: white;
+        padding: 40px;
+        width: 30%;
+        border-radius: 6px;
+        text-align: left;
+    }
+
+    .rating {
+        font-size: 70px; /* rasmga mos */
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .small {
+        font-size: 20px;
+    }
+
+    .rating-card ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+        line-height: 1.8;
+        font-size: 17px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .cards, .bottom-section {
+            flex-direction: column;
+        }
+        .card, .bottom-card, .rating-card {
+            width: 100%;
+        }
+    }
+</style>
+
 </head>
 <body>
-  <div class="wrap">
-    <div class="grid">
-      <div class="left">
-        <h2 style="margin:0;color:#e9f6ee;font-size:20px;font-weight:500">Introducing Xref</h2>
-        <h1>Get feedback<br>across the entire<br>talent journey</h1>
-        
-      </div>
-      <div class="right">
-        <div class="feature">
-          <h3>Simple</h3>
-          <p>Save time: Create and send a survey in as little as 30 seconds. Feedback is compiled in easy to understand graphs for actionable insights.</p>
+
+<section class="container">
+    <h3 class="subtitle">What our customers say</h3>
+    <h1 class="title">Trusted by the companies you trust</h1>
+
+    <div class="cards">
+        <div class="card">
+            <p class="card-text">How Westpac benefit from Xref's tailored service</p>
+            <a href="#" class="learn">Learn more</a>
         </div>
-        <div class="feature">
-          <h3>Convenient</h3>
-          <p>Reduce admin: Surveys can be created and completed anywhere, any time, on any device. Let automation do the rest.</p>
+
+        <div class="card">
+            <p class="card-text">Getting to know candidates with Xref</p>
+            <a href="#" class="learn">Learn more</a>
         </div>
-        <div class="feature">
-          <h3>Secure</h3>
-          <p>Ensure peace of mind: Xref is ISO27001 certified and GDPR compliant so your data is kept safe and secure.</p>
+
+        <div class="card">
+            <p class="card-text">Enjoying Fast, Effective and Accurate Results</p>
+            <a href="#" class="learn">Learn more</a>
         </div>
-      </div>
     </div>
-  </div>
+
+    <div class="bottom-section">
+        <div class="bottom-card">
+            <h2>Over <span class="green">200</span></h2>
+            <p>
+                User reviews have proven to outperform any other assessments in the consumer world.
+                Thats why were proud of what our reviewers have to say.
+            </p>
+            <a href="#" class="why">Why users love us</a>
+        </div>
+
+        <div class="rating-card">
+            <h1 class="rating">4.7 <span class="small">out of 5</span></h1>
+            <ul>
+                <li>9.4 &nbsp; Ease of use</li>
+                <li>9.3 &nbsp; Quality of support</li>
+                <li>9.3 &nbsp; Ease of setup</li>
+            </ul>
+        </div>
+        
+
+<div class="bottom-card">
+            <h2>Leading the pack</h2>
+            <p>
+                Capterra<br>
+                Google
+            </p>
+            <small>93 reviews as of 7/10/2022</small><br>
+            <small>744 reviews as of 7/10/2022</small>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>
