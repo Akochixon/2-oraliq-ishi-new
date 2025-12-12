@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+
+
+}
+.for_text{
+    width: 50%;
+    height: 98vh;
+    margin-left: 5vh;
+    flex: 1;
+}
+.for_pic{
+    width: 50%;
+    height: 98vh;
+
+    flex: 1;
+}
+img{
+    margin-top: 10vh;
+    margin-left: 20vh;
+}
