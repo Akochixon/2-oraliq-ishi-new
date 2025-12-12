@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Get feedback — Landing mock</title>
+  <style>
+    :root{--bg:#05221b;--panel:#072d22;--muted:#93a694;--accent:#dff2e6}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+    body{background:var(--bg);color:var(--accent);display:flex;align-items:center;justify-content:center;padding:28px}
+    .wrap{width:100%;max-width:1120px;background:transparent;border-radius:6px;padding:28px;box-sizing:border-box}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+    .left h1{font-size:44px;line-height:1.02;margin:0;color:#e9f6ee;font-weight:600}
+    .left p{margin-top:8px;color:var(--muted);font-size:15px;max-width:520px}
+    .right{display:flex;flex-direction:column;gap:18px}
+    .feature h3{margin:0;font-size:15px;color:#bfe9c8}
+    .feature p{margin:6px 0 0 0;color:var(--muted);font-size:14px;line-height:1.45}
+    .screenshot{width:100%;height:140px;border-radius:6px;overflow:hidden;box-shadow:0 4px 30px rgba(0,0,0,0.6)}
+    .screenshot img{width:100%;height:100%;object-fit:cover;display:block}
+    @media (max-width:900px){.grid{grid-template-columns:1fr;gap:18px}.left h1{font-size:32px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="grid">
+      <div class="left">
+        <h2 style="margin:0;color:#e9f6ee;font-size:20px;font-weight:500">Introducing Xref</h2>
+        <h1>Get feedback<br>across the entire<br>talent journey</h1>
+        
+      </div>
+      <div class="right">
+        <div class="feature">
+          <h3>Simple</h3>
+          <p>Save time: Create and send a survey in as little as 30 seconds. Feedback is compiled in easy to understand graphs for actionable insights.</p>
+        </div>
+        <div class="feature">
+          <h3>Convenient</h3>
+          <p>Reduce admin: Surveys can be created and completed anywhere, any time, on any device. Let automation do the rest.</p>
+        </div>
+        <div class="feature">
+          <h3>Secure</h3>
+          <p>Ensure peace of mind: Xref is ISO27001 certified and GDPR compliant so your data is kept safe and secure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
