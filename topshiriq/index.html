@@ -1,48 +1,124 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Get feedback — Landing mock</title>
-  <style>
-    :root{--bg:#05221b;--panel:#072d22;--muted:#93a694;--accent:#dff2e6}
-    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
-    body{background:var(--bg);color:var(--accent);display:flex;align-items:center;justify-content:center;padding:28px}
-    .wrap{width:100%;max-width:1120px;background:transparent;border-radius:6px;padding:28px;box-sizing:border-box}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
-    .left h1{font-size:44px;line-height:1.02;margin:0;color:#e9f6ee;font-weight:600}
-    .left p{margin-top:8px;color:var(--muted);font-size:15px;max-width:520px}
-    .right{display:flex;flex-direction:column;gap:18px}
-    .feature h3{margin:0;font-size:15px;color:#bfe9c8}
-    .feature p{margin:6px 0 0 0;color:var(--muted);font-size:14px;line-height:1.45}
-    .screenshot{width:100%;height:140px;border-radius:6px;overflow:hidden;box-shadow:0 4px 30px rgba(0,0,0,0.6)}
-    .screenshot img{width:100%;height:100%;object-fit:cover;display:block}
-    @media (max-width:900px){.grid{grid-template-columns:1fr;gap:18px}.left h1{font-size:32px}}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xref UI Section</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0d2f25;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 60px auto;
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #0f3b2f;
+            padding: 30px;
+            border-radius: 15px;
+            width: 32%;
+            min-height: 350px;
+            box-sizing: border-box;
+        }
+
+        .card img {
+            width: 50px;
+            margin-bottom: 15px;
+        }
+
+        .title {
+            font-size: 18px;
+            opacity: 0.7;
+        }
+
+        .heading {
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 1.3;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            color: #a4ff9e;
+        }
+
+        .badge {
+            background: #7dd7ff;
+            color: black;
+            padding: 2px 6px;
+            border-radius: 5px;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+
+        .badge-new {
+            background: #cfff4d;
+            color: black;
+        }
+
+        .desc {
+            font-size: 14px;
+            line-height: 1.4;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 900px) {
+            .card {
+                width: 100%;
+            }
+        }
+
+    </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="grid">
-      <div class="left">
-        <h2 style="margin:0;color:#e9f6ee;font-size:20px;font-weight:500">Introducing Xref</h2>
-        <h1>Get feedback<br>across the entire<br>talent journey</h1>
-        
-      </div>
-      <div class="right">
-        <div class="feature">
-          <h3>Simple</h3>
-          <p>Save time: Create and send a survey in as little as 30 seconds. Feedback is compiled in easy to understand graphs for actionable insights.</p>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="https://via.placeholder.com/50" alt="Reference">
+            <div class="title">Reference</div>
+            <div class="heading">
+                <span class="highlight">Recruit</span> only the best <br> validated talent.
+            </div>
+            <div class="desc">
+                Reduce time to hire and secure top talent fast. 
+                Make informed, compliant hiring decisions with Xref’s automated reference checking software.
+            </div>
         </div>
-        <div class="feature">
-          <h3>Convenient</h3>
-          <p>Reduce admin: Surveys can be created and completed anywhere, any time, on any device. Let automation do the rest.</p>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/50" alt="Pulse">
+            <div class="title">Pulse <span class="badge">Coming soon</span></div>
+            <div class="heading">
+                <span class="highlight">Retain</span> your people and <br> make meaningful decisions.
+            </div>
+            <div class="desc">
+                Want the secret to reduce attrition and understand what metrics your organisation performs well at or can improve upon? Conduct a Pulse Survey.
+            </div>
         </div>
-        <div class="feature">
-          <h3>Secure</h3>
-          <p>Ensure peace of mind: Xref is ISO27001 certified and GDPR compliant so your data is kept safe and secure.</p>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/50" alt="Exits">
+            <div class="title">Exits <span class="badge badge-new">New</span></div>
+            <div class="heading">
+                <span class="highlight">Remember</span>
+            </div>
+            <div class="desc">
+                Collect, analyse and measure feedback from departing employees. Reduce attrition and improve retention over time by collecting consistent data to improve organisational performance.
+            </div>
         </div>
-      </div>
+
     </div>
-  </div>
+
 </body>
 </html>
