@@ -1,11 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xref Clone</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        body {
+            margin: 0;
+            background: #073b32;
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+        }
+
+        .hero {
+            width: 100%;
+            height: 100vh;
+            padding: 90px 90px;
+            position: relative;
+            color: white;
+        }
+
+        /* LEFT CONTENT */
+        .content {
+            max-width: 520px;
+            margin-top: 40px;
+            position: relative;
+            z-index: 5;
+        }
+
+        h1 {
+            font-size: 52px;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 18px;
+            opacity: .85;
+            margin-bottom: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 22px;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 30px;
+            font-size: 16px;
+        }
+
+        .btn.primary {
+            background: #d4ff79;
+            color: #0c3d2e;
+        }
+
+        .btn.secondary {
+            color: #c9d7d2;
+        }
+
+        /* FLOATING AVATARS */
+        .avatar {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background: #fff;
+            color: #134735;
+            font-weight: 700;
+            padding: 8px 13px;
+            border-radius: 30px;
+            animation: float 4s ease-in-out infinite;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            z-index: 10;
+        }
+
+        .avatar-a {
+            top: 110px;
+            left: 55%;
+        }
+
+        .avatar-group {
+            top: 130px;
+            left: 78%;
+            padding: 6px 12px;
+        }
+
+        .avatar-group img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .avatar-tags {
+            top: 260px;
+            left: 60%;
+            background: transparent;
+            box-shadow: none;
+        }
+
+        .avatar-tags span {
+            background: #fff;
+            color: #113528;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            margin-left: -2px;
+            font-weight: 700;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* 3D Shakl */
+        .shape {
+            position: absolute;
+            width: 410px;
+            height: 320px;
+            background: linear-gradient(135deg, #106554, #0b3d31);
+            border-radius: 45px;
+            transform: rotate(45deg);
+            border-bottom: 8px solid #19e388;
+            opacity: 0.95;
+        }
+
+       
+        .shape-top {
+            top: 18%;
+            right: 240px;
+        }
+
+   
+        .shape-bottom {
+            bottom: 2%;
+            right: 300px;
+            transform: rotate(45deg) scale(0.83);
+        }
+
+        /* FLOAT ANIMATION */
+        @keyframes float {
+            0% { transform: translateY(10); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
-  start
+
+<div class="hero">
+
+    <!-- FLOATING -->
+    <div class="avatar avatar-a">A</div>
+
+    <div class="avatar avatar-group">
+        <img src="https://i.pravatar.cc/40?img=3">
+        <img src="https://i.pravatar.cc/40?img=6">
+    </div>
+
+    <div class="avatar avatar-tags">
+        <span>T</span>
+        <span>Z</span>
+    </div>
+
+    <!-- LEFT TEXT -->
+    <div class="content">
+        <h1>Recruit, retain and<br>remember your people</h1>
+        <p>Simplify your talent journey and make confident, people-focused decisions with Xref.</p>
+
+        <div class="buttons">
+            <a href="#" class="btn primary">Get started for free</a>
+            <a href="#" class="btn secondary">Request a demo</a>
+        </div>
+    </div>
+
+    <!-- NEW FIXED 3D SHAPES -->
+    <div class="shape shape-top"></div>
+    <div class="shape shape-bottom"></div>
+
+</div>
+
 </body>
 </html>
