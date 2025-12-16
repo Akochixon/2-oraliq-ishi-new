@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xref Cards</title>
+  <style>
+    body {
+      margin: 0;
+      background: #072b26;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      padding: 40px 0;
+    }
+
+    .container {
+      display: flex;
+      gap: 25px;
+    }
+
+    .card {
+      background: #0d3c37;
+      width: 280px;
+      padding: 25px;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .icon {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: #1e574f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .title-small {
+      font-size: 15px;
+      opacity: 0.8;
+    }
+
+    .title-big {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    .highlight {
+      color: #b5ff66;
+    }
+
+    .tag {
+      background: #294d47;
+      color: #ddd;
+      font-size: 11px;
+      padding: 3px 7px;
+      border-radius: 4px;
+      margin-left: 6px;
+    }
+
+    .tag-new {
+      background: #89ff4c;
+      color: #073019;
+      font-size: 11px;
+      padding: 3px 7px;
+      border-radius: 4px;
+      margin-left: 6px;
+      font-weight: bold;
+    }
+
+    .desc {
+      font-size: 13px;
+      line-height: 1.5;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- CARD 1 -->
+    <div class="card">
+      <div class="icon">●</div>
+
+      <div class="title-small">Reference</div>
+
+      <div class="title-big">
+        <span class="highlight">Recruit</span> only the best<br>
+        validated talent.
+      </div>
+
+      <div class="desc">
+        Reduce time to hire and secure top talent fast.
+        Make informed, compliant hiring decisions with
+        Xref’s automated reference checking software.
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+      <div class="icon">◎</div>
+
+      <div class="title-small">Pulse <span class="tag">Coming soon</span></div>
+
+      <div class="title-big">
+        <span class="highlight">Retain</span> your people and<br>
+        make meaningful
+      </div>
+
+      <div class="desc">
+        Want the secret to reduce attrition and understand what
+        metrics your organisation performs well at or can improve?
+        Conduct a Pulse Survey.
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card">
+      <div class="icon">▲</div>
+
+      <div class="title-small">Exits <span class="tag-new">New</span></div>
+
+      <div class="title-big">
+        <span class="highlight">Remember</span>
+      </div>
+
+      <div class="desc">
+        Collect, analyse and measure feedback from departing employees.
+        Reduce attrition and improve retention over time by collecting
+        consistent data to improve organisational performance.
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
