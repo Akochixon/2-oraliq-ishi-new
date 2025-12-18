@@ -1,177 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Sahifa kodlash turi -->
   <meta charset="UTF-8">
-
-  <!-- Responsive dizayn uchun -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Brauzer tab nomi -->
-  <title>Industry Section</title>
+  <title>Exact Navbar</title>
 
   <style>
-    /* Barcha elementlar uchun umumiy sozlamalar */
     * {
-      box-sizing: border-box; /* padding sizega ta’sir qilmasin */
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    /* Sahifa asosiy tanasi */
-    body {
-      margin: 0; /* default margin olib tashlandi */
+      margin: 0;
       padding: 0;
-      background: #ffffff;
+      box-sizing: border-box;
     }
 
-    /* Asosiy konteyner */
-    .container {
-      max-width: 1200px; /* maksimal kenglik */
-      margin: 0 auto; /* markazga joylash */
-      padding: 60px 20px;
-      display: grid; /* grid layout */
-      grid-template-columns: 1fr 1fr; /* 2 ta ustun */
-      gap: 40px; /* ustunlar orasidagi masofa */
-      align-items: center;
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #fff;
     }
 
-    /* ===== CHAP TOMON (RASM) ===== */
-    .image-wrapper {
-      position: relative; /* absolute elementlar uchun asos */
-      width: 100%;
-      max-width: 420px;
-    }
-
-    /* Yashil fon shakli */
-    .green-shape {
-      position: absolute;
-      inset: 0; /* top right bottom left = 0 */
-      background: #d9ff8a;
-      border-radius: 40px;
-      transform: rotate(12deg); /* burilish */
-      z-index: 1;
-    }
-
-    /* Asosiy rasm qutisi */
-    .image-box {
-      position: relative;
-      z-index: 2; /* yashil fon ustida */
-      border-radius: 30px;
-      overflow: hidden; /* tashqariga chiqmasin */
-    }
-
-    /* Rasm */
-    .image-box img {
-      width: 100%;
-      height: auto; /* rasm buzilmasin */
-      display: block;
-    }
-
-    /* ===== O‘NG TOMON (MATN) ===== */
-    .content small {
-      color: #666;
-      font-size: 14px;
-    }
-
-    .content h1 {
-      font-size: 42px;
-      margin: 15px 0;
-      line-height: 1.2;
-    }
-
-    .content p {
-      color: #555;
-      max-width: 500px;
-      line-height: 1.6;
-    }
-
-    /* Industry ro‘yxati */
-    .industry-list {
-      margin-top: 30px;
-      display: grid;
-      grid-template-columns: 1fr 1fr; /* 2 ustun */
-      gap: 15px 40px;
-    }
-
-    /* Har bir element */
-    .industry-item {
+    /* NAVBAR */
+    .navbar {
+      height: 70px;
+      padding: 0 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-bottom: 8px;
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid #ededed;
+    }
+
+    /* LEFT */
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 45px;
+    }
+
+    .logo {
+      width: 38px;
+      height: 38px;
+      background: #7b2cff;
+      color: #fff;
+      border-radius: 50%;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-menu a {
+      margin-right: 26px;
+      text-decoration: none;
+      color: #2c2c2c;
       font-size: 15px;
-      cursor: pointer; /* sichqoncha belgisi */
+      font-weight: 500;
     }
 
-    /* Hover effekti */
-    .industry-item:hover {
-      color: #000;
+    .nav-menu a:last-child {
+      margin-right: 0;
     }
 
-    /* O‘q belgisi */
-    .arrow {
-      color: #999;
-      font-size: 18px;
+    /* RIGHT */
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
     }
 
-    /* ===== MOBIL VERSIYA ===== */
-    @media (max-width: 900px) {
-      .container {
-        grid-template-columns: 1fr; /* bitta ustun */
-        text-align: center;
-      }
+    .signin {
+      text-decoration: none;
+      color: #2c2c2c;
+      font-size: 15px;
+      font-weight: 500;
+    }
 
-      .industry-list {
-        grid-template-columns: 1fr;
-      }
+    .demo-btn {
+      background: #1f7a4d;
+      color: #fff;
+      padding: 9px 18px;
+      border-radius: 22px;
+      font-size: 14px;
+      text-decoration: none;
+    }
 
-      .image-wrapper {
-        margin: 0 auto;
-      }
+    /* USERS */
+    .users {
+      display: flex;
+      gap: 6px;
+    }
+
+    .user {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .purple {
+      background: #7b2cff;
+    }
+
+    .green {
+      background: #2ecc71;
     }
   </style>
-</head>
 
+</head>
 <body>
 
-  <!-- Asosiy bo‘lim -->
-  <section class="container">
+  <header class="navbar">
+    <!-- LEFT -->
+    <div class="nav-left">
+      <div class="logo">K</div>
 
-    <!-- Chap tomondagi rasm -->
-    <div class="image-wrapper">
-      <div class="green-shape"></div>
-
-      <div class="image-box">
-        <img
-          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80"
-          alt="Professional woman working">
-      </div>
+      <nav class="nav-menu">
+        <a href="#">Why Xref</a>
+        <a href="#">Solutions</a>
+        <a href="#">Platform</a>
+        <a href="#">Resources</a>
+        <a href="#">Pricing</a>
+      </nav>
     </div>
 
-    <!-- O‘ng tomondagi matn -->
-    <div class="content">
-      <small>For industries</small>
+    <!-- RIGHT -->
+    <div class="nav-right">
+      <a href="#" class="signin">Sign in</a>
+      <a href="#" class="demo-btn">Request demo</a>
 
-      <h1>Tailored to the unique needs of your industry</h1>
-
-      <p>
-        At Xref, we’re people-focused, so no matter what industry you’re in,
-        we cater to your unique needs to provide you with one source of talent truth.
-      </p>
-
-      <!-- Industry ro‘yxati -->
-      <div class="industry-list">
-        <div class="industry-item">Not-For-Profit <span class="arrow">→</span></div>
-        <div class="industry-item">Retail <span class="arrow">→</span></div>
-        <div class="industry-item">Health and Aged Care <span class="arrow">→</span></div>
-        <div class="industry-item">Hospitality <span class="arrow">→</span></div>
-        <div class="industry-item">Government <span class="arrow">→</span></div>
-        <div class="industry-item">Construction <span class="arrow">→</span></div>
+      <div class="users">
+        <span class="user purple">M</span>
+        <span class="user green">K</span>
       </div>
     </div>
-
-  </section>
+  </header>
 
 </body>
 </html>
